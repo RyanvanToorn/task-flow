@@ -1,6 +1,6 @@
 import type { BaseComponentProps } from "shared/StandardProps";
 
 export interface TitleProps extends BaseComponentProps {
-  title?: string;
+  title: string;
   size?: "s" | "m" | "l";
 }
