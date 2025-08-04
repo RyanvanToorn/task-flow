@@ -1,6 +1,9 @@
 import type { BaseComponentProps } from "shared/StandardProps";
-import type { OutlinedTextFieldProps as MUITextFieldProps } from "@mui/material/TextField";
+import type { OutlinedTextFieldProps, StandardTextFieldProps, FilledTextFieldProps } from "@mui/material/TextField";
 
-export interface TextFieldProps extends BaseComponentProps, MUITextFieldProps {
-  temp?: string;
-}
+type MUITextFieldProps = OutlinedTextFieldProps | StandardTextFieldProps | FilledTextFieldProps;
+
+export type TextFieldProps = BaseComponentProps &
+  MUITextFieldProps & {
+    temp?: string;
+  };
