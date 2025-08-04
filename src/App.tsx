@@ -1,5 +1,6 @@
 import { AppBar } from "./components/AppBar/AppBar";
 import { Title } from "./components/Title/Title";
+import { Table } from "./components/Table/Table";
 
 export default function App() {
   return (
@@ -10,7 +11,11 @@ export default function App() {
         </AppBar>
       </div>
 
-      <div className="app-body"></div>
+      <div className="app-body">
+        <div className="dashboard-top">
+          <Table />
+        </div>
+      </div>
 
       <div className="app-footer"></div>
     </div>
