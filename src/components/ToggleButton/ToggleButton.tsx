@@ -5,5 +5,5 @@ import MUIToggleButton from "@mui/material/ToggleButton";
 export const ToggleButton: React.FC<ToggleButtonProps> = ({ isVisible = true, extendedClass = "", inlineStyles = {} }) => {
   if (!isVisible) return;
 
-  return <MUIToggleButton className={`${styles.toggleButton} ${extendedClass}`} style={inlineStyles}></MUIToggleButton>;
+  return <MUIToggleButton value="toggle" className={`${styles.toggleButton} ${extendedClass}`} style={inlineStyles}></MUIToggleButton>;
 };
