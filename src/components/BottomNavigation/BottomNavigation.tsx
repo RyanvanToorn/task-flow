@@ -2,6 +2,6 @@ import type { BottomNavigationProps } from "./BottomNavigation.types";
 import styles from "./BottomNavigation.module.css";
 import MUIBottomNavigation from "@mui/material/BottomNavigation";
 
-export const BottomNavigation: React.FC<BottomNavigationProps> = ({ temp = "Default alert message", extendedClass = "" }) => {
-  return <div className={`${styles.alert} ${extendedClass}`}>{temp}</div>;
+export const BottomNavigation: React.FC<BottomNavigationProps> = ({ temp = "", extendedClass = "" }) => {
+  return <MUIBottomNavigation className={`${styles.bottomNavigation} ${extendedClass}`}>{temp}</MUIBottomNavigation>;
 };
