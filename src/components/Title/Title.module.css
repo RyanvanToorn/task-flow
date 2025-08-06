@@ -1,7 +1,12 @@
 .title {
-  display: flex;
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
 }
 
 .titleWrapper {
-  padding: 0 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-m) 0;
 }
