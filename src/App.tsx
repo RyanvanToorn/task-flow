@@ -1,6 +1,7 @@
 import { AppBar } from "./components/AppBar/AppBar";
 import { Title } from "./components/Title/Title";
 import { Table } from "./components/Table/Table";
+import "@shared/styles/common-styles.css";
 
 export default function App() {
   return (
