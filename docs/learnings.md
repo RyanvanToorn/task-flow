@@ -21,8 +21,15 @@
 ## Interfaces:
 
 - Essentially serve as a nicer way to declare props (? is optional) and enforce it across usages, very neat and will be certainly be using in future.
+- Extending interfaces is very convenient and a efficient way to add on to an existing interface, without compromising it or affecting other usages.
 
 ## Imports/Exports:
 
 - Struggled considerably with several minor issues, first learning is that { name } is a named export and should be imported with similar syntax, however you can use a default export (minus the "{}") and import from the file directly. Not sure what industry best practice is but naming the exports seems like it should be the standard even if it's a single export file/folder.
 - Interfaces/types should always be exported as such. Won't throw an IDE or compile time issue, but will throw a console error in the browser.
+- My usual common styles sheet does not need to be imported within every component, but can instead be imported once at a global level (app) and still apply to each component.
+
+## General:
+
+- Completely and utterly over-complicated my intial attempt at the project, adding too many props, one off styles, and ham-stringing the amazing MUI components by 'bending' them to my expectations, instead of truly wrapping them. Started over with KISS in mind (Keep It Simple, Stupid)
+-
