@@ -1,4 +1,4 @@
-import type { BaseComponentProps } from "shared/StandardProps";
+import type { BaseComponentProps } from "@shared/interfaces/StandardProps";
 import type { AppBarProps as MUIAppBarProps } from "@mui/material/AppBar";
 import type { ReactElement } from "react";
 

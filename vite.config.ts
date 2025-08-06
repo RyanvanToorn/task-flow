@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@types": path.resolve(__dirname, "src/shared"),
+      "@shared": path.resolve(__dirname, "src/shared"),
     },
   },
 });
